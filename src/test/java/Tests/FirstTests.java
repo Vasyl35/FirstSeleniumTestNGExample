@@ -9,14 +9,14 @@ import static org.testng.Assert.assertEquals;
 
 
 public class FirstTests extends BaseTest {
-    /*@Test (priority = 0)                            //TITLE
+    @Test (priority = 1)                            //TITLE
     public void titleCheck () {
         String actualTitle = driver.getTitle();
         String expectedTitle = "TestNG Tutorial: Annotations, Framework, Examples in Selenium";
         System.out.println("actualTitle is " + actualTitle);
         assertEquals(actualTitle,expectedTitle);
-    }*/
-    @Test(priority = 0)                            //mouseHover+click on Menu item
+    }
+    @Test(priority = 1)                            //mouseHover+click on Menu item
     public void mouseHover() {
         Actions actions = new Actions(driver);
         WebElement menuOption = driver.findElement(By.xpath("//*[@id=\"menu-5108-particle\"]/nav/ul/li[2]/div/span[1]/span"));
